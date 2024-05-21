@@ -12,7 +12,13 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "cp:yarn-cache": "cp -r /Users/hwangwoojin/Library/Caches/Yarn/v6 ./cache/yarn-cache",
+    "cp:node_modules": "cp -r ./node_modules ./cache/node_modules",
+    "cp:all": "npm run cp:yarn-cache && npm run cp:node_modules",
+    "zip:cache": "zip -r yarn-cache.zip ./cache/yarn-cache",
+    "zip:node_modules": "zip -r node_modules.zip ./cache/node_modules",
+    "zip:all": "npm run zip:cache && npm run zip:node_modules"
   },
   "dependencies": {
     "@docusaurus/core": "3.3.2",

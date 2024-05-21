@@ -21,3 +21,5 @@ yarn-error.log*
 
 # cache
 /cache
+yarn-cache.zip
+node_modules.zip
